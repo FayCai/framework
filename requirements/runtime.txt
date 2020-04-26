@@ -8,4 +8,3 @@ terminaltables
 torch>=1.1
 torchvision
 ensemble-boxes
-pycocotools
