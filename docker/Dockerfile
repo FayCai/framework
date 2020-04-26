@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y libglib2.0-0 libsm6 libxrender-dev libx
 
 # Install framework
 RUN conda clean --all
-RUN git clone https://github.com/FayCai/framework.git /framework
-WORKDIR /framework
+RUN git clone https://github.com/FayCai/framework.git /framework_mmdet
+WORKDIR /framework_mmdet
 ENV FORCE_CUDA="1"
 RUN pip install --no-cache-dir -e .
