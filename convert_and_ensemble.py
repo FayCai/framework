@@ -151,6 +151,6 @@ if __name__ == '__main__':
             tmp_dict['bbox'] = denorm_bbox(bbox, height, width)
             tmp_dict['score'] = v[1][i]
             output_list.append(tmp_dict)
-    print(output_list)
+    # print(output_list)
     with open(out_submit, 'w', encoding='utf-8') as f:
         json.dump(output_list, f, cls=MyEncoder)

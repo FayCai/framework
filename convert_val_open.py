@@ -65,8 +65,9 @@ def find_subclass(trs_dict):
 
 if __name__ == '__main__':
     with open(ori_anno, 'r', encoding='utf-8') as f:
-        s = f.read()
-        js_train = json.loads(json.dumps(eval(s)))
+        # s = f.read()
+        # js_train = json.loads(json.dumps(eval(s)))
+        js_train = json.load(f)
 
     dump_json_info(js_train)
     trs_json_train = dict()
